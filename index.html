@@ -31,9 +31,9 @@
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoicHJhdGlreWFkYXYiLCJhIjoiMTA2YWUxNjRkNmFmZGQ4YzAxZWFiNDk0NDM1YjE1YjAifQ.4P6N5dNmA_WQXd3BsJvu5w';
 var map = L.mapbox.map('map');
-L.mapbox.tileLayer('pratikyadav.d10a9898').addTo(map);
+L.mapbox.tileLayer('pratikyadav.633368f8').addTo(map);
 
-var overlay = L.mapbox.tileLayer('pratikyadav.7dd460fd').addTo(map);
+var overlay = L.mapbox.tileLayer('pratikyadav.7dee3919').addTo(map);
 var range = document.getElementById('range');
 
 function clip() {
@@ -46,7 +46,7 @@ function clip() {
 
 range['oninput' in range ? 'oninput' : 'onchange'] = clip;
 map.on('move', clip);
-map.setView([20.8174,75.6319], 11); 
+map.setView([19.5342,75.2818], 11); 
 
 clip();
 var hash = L.hash(map);
